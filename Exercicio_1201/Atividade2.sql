@@ -5,7 +5,7 @@ id bigint auto_increment,
 nome varchar(255) not null, 
 tipo varchar(255) not null, 
 quantidade int,
-preco decimal not null,
+preco decimal (10,2)not null,
 Desconto int,
 primary key (id)
 );

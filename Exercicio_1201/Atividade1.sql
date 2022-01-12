@@ -4,8 +4,8 @@ create table tb_funcionarios(
 	id bigint auto_increment,
 	nome varchar(300) not null, 
 	funcao varchar(300) not null,
-	salario decimal not null,
-    bonificacao decimal not null,
+	salario decimal (6,2)not null,
+    bonificacao decimal (6,2)not null,
     dependentes int,
     	primary key (id)
 );
