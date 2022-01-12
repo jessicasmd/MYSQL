@@ -4,9 +4,9 @@ create table tb_alunos(
 	id bigint auto_increment,
 	nome varchar(300) not null, 
 	idade int,
-    nota1 (2,2)decimal not null,
-    nota2 (2,2)decimal not null,
-    nota3 (2,2)decimal not null,
+    nota1 (2,2) decimal not null,
+    nota2 (2,2) decimal not null,
+    nota3 (2,2) decimal not null,
     primary key (id)
     );
     
@@ -22,4 +22,4 @@ create table tb_alunos(
     select nome,  nota3 from tb_alunos where nota3 > 7.00;
 	select nome,  nota3 from tb_alunos where nota3  < 7.00;
     
-    update tb_alunos set idade = 15 where id = 5;
+    update tb_alunos set idade = 15 where id = 5
