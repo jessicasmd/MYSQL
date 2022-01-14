@@ -43,4 +43,6 @@ select * from tb_pizza where precou > 45.00;
 select * from tb_pizza where precou between 29.00 and 60.00;
 select * from tb_pizza where nome_pizza like "%C%";
 
+select * from tb_pizza inner join tb_categoria on tb_categoria.id = tb_pizza.categoria_id;
+
 select * from tb_pizza inner join tb_categoria on tb_categoria.id = tb_pizza.categoria_id where tb_categoria.id = 5;
